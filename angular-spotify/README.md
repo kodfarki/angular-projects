@@ -27,9 +27,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Angular Features
-
-Routing: see app.module.ts 
-
 ## Source
 https://www.youtube.com/watch?v=f6SrTZwZi70
+
+## Part 02
+https://www.youtube.com/watch?v=Ppy3ipDzngA
+Routing: see app.module.ts 
+
+## Part 03
+https://www.youtube.com/watch?v=4EGwL4tXa7M
+Services: see src/app/services/spotify.service.ts
+Http, Headers: see app.module.ts 
+

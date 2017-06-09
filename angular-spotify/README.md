@@ -42,3 +42,7 @@ Http, Headers: see app.module.ts
 ## Part 04
 https://www.youtube.com/watch?v=Bn6tQlURf
 Data Model Development
+
+## Part 05
+https://www.youtube.com/watch?v=LJJvYcioMAY
+Routing

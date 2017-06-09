@@ -8,10 +8,12 @@ import {AppComponent} from './app.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {AboutComponent} from './components/about/about.component';
 import {SearchComponent} from './components/search/search.component';
+import {ArtistComponent} from "./components/artist/artist.component";
 
 const routes: Routes = [
     {path: '', component: SearchComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: 'artist/:id', component: ArtistComponent}
 ]
 
 @NgModule({
@@ -19,7 +21,8 @@ const routes: Routes = [
         AppComponent,
         NavbarComponent,
         AboutComponent,
-        SearchComponent
+        SearchComponent,
+        ArtistComponent
     ],
     imports: [
         BrowserModule,

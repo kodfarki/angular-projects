@@ -6,7 +6,7 @@ import {Artist} from "../../Artist";
     selector: 'app-search',
     templateUrl: './search.component.html',
     styleUrls: ['./search.component.css'],
-    providers: [SpotifyService]
+    providers: [SpotifyService],
 })
 
 export class SearchComponent implements OnInit {

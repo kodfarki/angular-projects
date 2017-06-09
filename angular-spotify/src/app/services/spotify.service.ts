@@ -9,18 +9,26 @@ import 'rxjs/add/operator/map';
 export class SpotifyService {
 
     private searchUrl: string;
-    private headers = new Headers({"Authorization": "Bearer BQBWJ6PTfBsikB3r6_P9ZreK2wdkQQoFriWN6WAKt_mu73xv4776He29fsRJDLRA-EY_gueUH_UnnU-zY80NoVGp15bhQUHmctIGjCsUBFe35xw1tfFGgGmjyU1fyMywjx539a608-YWxwjySXJR89WtMcWxpGj3I-77wh0-_ye4hncKeVKHne3Q-GwigIiqigkA8G8A5YuFiSRqCjP7ELS4jX43hA_W7_SmHLH_iGPhxVCj864bOxWG9a84MZSu9VA2oTGArQgbafM5gWHSG_EuH2oIyxwfkzB2GuRPjwD7uNu4E7gTd46S_kFvpP3W"});
+    private token = "BQBVCZNGhefZF0Oh5W1RVGMt-fJ67esIgUYFFMvEDisIQj22m7xZ1PF3k2LdZ1xRu-RtO2ftwYGEq0IJo8-RY-Suu7r2ZBdiB-3KmINOqERdO0pHw_DbQsenE5hqWmv5jws1r-mDhNjmGHrLx-DmsJ8CeXbSAKjChwGdxagUJXoGVirOawJYPg5tuxFtQvIpRQggGfo2v0uQNyQYUGKSA1FRypzWwXmwJM_NrXPxmEE5ZnKp0Yle1Xh0WuQfJ5igp1Wic_DmmntjnbhAJlPoRCN1F8pca953er6joCizhRrbFWAlsbgUGq23jwyVFo03";
+    
+    private headers = new Headers({"Authorization": "Bearer " + this.token});
+    private artistUrl: string;
 
     constructor(private _http: Http) {
 
     }
     
     searchMusic(str: string, type = 'artist') {
-
         this.searchUrl = "https://api.spotify.com/v1/search?q=" + str + "&offset=0&limit=20&type=" + type + "&market=US";
 
         return this._http.get(this.searchUrl, {headers: this.headers})
             .map(res => res.json());
     }
 
+    getArtist(id: string) {
+        this.artistUrl = "https://api.spotify.com/v1/artists/" + id;
+
+        return this._http.get(this.artistUrl, {headers: this.headers})
+            .map(res => res.json());
+    }
 }

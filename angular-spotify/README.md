@@ -39,3 +39,6 @@ https://www.youtube.com/watch?v=4EGwL4tXa7M
 Services: see src/app/services/spotify.service.ts
 Http, Headers: see app.module.ts 
 
+## Part 04
+https://www.youtube.com/watch?v=Bn6tQlURf
+Data Model Development

@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 export class SpotifyService {
 
     private searchUrl: string;
-    private headers = new Headers({"Authorization": "Bearer BQCZcphCmZTqvGgU_A922PzdE6_4TaUY6VMIRENvbOXh2OStocuReIVfkaiG-w-xfoUeB595lcab_jRiYIM6I1NghsJ_MJa1ZliQoAaIlkm1fBJiXyCCGeut1cbmHsbjgsuehDkyAZJaUMiwyJ2xc0qc3fopyyAt1J1PcyqnfldU2gpSoQkhoCJkz5AwEhFj84cK1Xn9zky64KBrPW2MkHSq8efXNQzMiS125hrXlJ0cX21zh-vL8QTwPhMVqZ77lxOqwI5n3jTZ--C234AIaZg57lZkpxbicrWHjp6f8k5kBNXCYqeIHVhlYLAbnTnU"});
+    private headers = new Headers({"Authorization": "Bearer BQBWJ6PTfBsikB3r6_P9ZreK2wdkQQoFriWN6WAKt_mu73xv4776He29fsRJDLRA-EY_gueUH_UnnU-zY80NoVGp15bhQUHmctIGjCsUBFe35xw1tfFGgGmjyU1fyMywjx539a608-YWxwjySXJR89WtMcWxpGj3I-77wh0-_ye4hncKeVKHne3Q-GwigIiqigkA8G8A5YuFiSRqCjP7ELS4jX43hA_W7_SmHLH_iGPhxVCj864bOxWG9a84MZSu9VA2oTGArQgbafM5gWHSG_EuH2oIyxwfkzB2GuRPjwD7uNu4E7gTd46S_kFvpP3W"});
 
     constructor(private _http: Http) {
 
